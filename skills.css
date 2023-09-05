@@ -1,0 +1,12 @@
+body {
+    background-image: url(img/92220679-corporate-identity-template-on-white-paper-background-photo-of-blank-stationery-set-mockup-for-desig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar {
+    background-color: white;
+}
+.card{
+    max-width: 540px;
+}

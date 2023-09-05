@@ -1,0 +1,60 @@
+body {
+    background-image: url(img/92220679-corporate-identity-template-on-white-paper-background-photo-of-blank-stationery-set-mockup-for-desig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar {
+    background-color: white;
+}
+
+.heading-text {
+    text-align: center;
+    color: black;
+    background-color:#74CEFE;
+    margin-left: 268px;
+    margin-right: 268px;
+
+}
+
+.home {
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.heading-area {
+    opacity: 0.8;
+    padding-top: 60px;
+}
+
+#card {
+    max-width: 990px;
+    max-height: 900px;
+}
+
+.full-card {
+    padding-top: 50px;
+    padding-left: 250px;
+    opacity: 0.9;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.card-text {
+    font-size: 20px;
+}
