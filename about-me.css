@@ -14,7 +14,8 @@
     opacity: 0.8;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     opacity: 1;
     color: var(--accent-color) !important;
 }
@@ -30,7 +31,8 @@
     transition: var(--transition);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
