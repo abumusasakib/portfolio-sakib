@@ -10,30 +10,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="about-me.css">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="skills.css">
+    <title>Abu Musa Sakib | Skills</title>
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand">
-            <img src="img/cooltext397145905680714.png" alt="" width="40" height="30">
+    <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="accent-text" style="font-size: 1.5rem;">AMS.</span>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about-me.html">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
+                <a class="nav-link active" href="skills.html">Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -45,100 +46,62 @@
 
     <div class="skills">
         <div class="container">
+            <h1 class="text-center mb-5"><span class="accent-text">My Skills</span></h1>
+            
             <div class="row">
-                <div class="col-md-12" style="padding-top: 12px">
-                    <div class="card mb-3" style="opacity: 0.8;">
-                        <div class="row g-0">
-                            <div class="col-md-3">
-                                <img src="img/skills-word-cloud-business-concept-58626753.jpg"
-                                    class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="card-title">General Skills</h5>
-                                    <p class="card-text">
-                                        1. Good proof reading skills <br>
-                                        2. Ability to do critical thinking which helps to solve problems within
-                                        ability <br>
-                                        3. Able to work under pressure <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <!-- General Skills -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <img src="img/skills-word-cloud-business-concept-58626753.jpg" class="skill-icon rounded" alt="General">
+                        <h3 class="skill-title">General</h3>
+                        <ul class="skill-list">
+                            <li>Proof reading</li>
+                            <li>Critical thinking</li>
+                            <li>Problem solving</li>
+                            <li>Stress management</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-3" style="opacity: 0.8;">
-                        <div class="row g-0">
-                            <div class="col-md-3">
-                                <img src="img/LCOM_Website_DigitalLiteracy_Image1_Dec16.png"
-                                    class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="card-title">Computer Skills</h5>
-                                    <p class="card-text">
-                                        1. Detect and solve software problems to the best of my ability <br>
-                                        2. Setting up system OS and softwares such as Microsoft Windows and Linux.
-                                        <br>
-                                        3. Compose documents and reports as efficiently as possible using Microsoft
-                                        Word<br>
-                                        4. Looking for any resource over the Internet <br>
-                                        5. Send E-mails <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Computer Skills -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <img src="img/LCOM_Website_DigitalLiteracy_Image1_Dec16.png" class="skill-icon rounded" alt="Computer">
+                        <h3 class="skill-title">System</h3>
+                        <ul class="skill-list">
+                            <li>Software Troubleshooting</li>
+                            <li>OS Installation (Windows/Linux)</li>
+                            <li>MS Office Suite</li>
+                            <li>Advanced Web Research</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-3" style="opacity: 0.8;">
-                        <div class="row g-0">
-                            <div class="col-md-3">
-                                <img src="img/Showcase-your-Programming-Skills.jpg" class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="card-title">Programming Skills</h5>
-                                    <p class="card-text">
-                                        I am good at: <br>
-                                        1. C/C++ <br>
-                                        2. Java <br>
-                                        3. Python <br>
-                                        4. HTML <br>
-                                        5. CSS <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
+                <!-- Programming Skills -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <img src="img/Showcase-your-Programming-Skills.jpg" class="skill-icon rounded" alt="Programming">
+                        <h3 class="skill-title">Coding</h3>
+                        <ul class="skill-list">
+                            <li>C / C++</li>
+                            <li>Java & Python</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>Responsive Design</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-3" style="opacity: 0.8;">
-                        <div class="row g-0">
-                            <div class="col-md-3">
-                                <img src="img/Lessonly_Resources_communication-skills-training_Mock-Up_F.png" class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="card-title">Language Skills</h5>
-                                    <p class="card-text">
-                                        I am good at: <br>
-                                        1. English <br>
-                                        2. Bangla <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
+                <!-- Language Skills -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <img src="img/Lessonly_Resources_communication-skills-training_Mock-Up_F.png" class="skill-icon rounded" alt="Language">
+                        <h3 class="skill-title">Languages</h3>
+                        <ul class="skill-list">
+                            <li>English (Fluent)</li>
+                            <li>Bangla (Native)</li>
+                            <li>Communication</li>
+                            <li>Documentation</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -1,60 +1,88 @@
-body {
-    background-image: url(img/92220679-corporate-identity-template-on-white-paper-background-photo-of-blank-stationery-set-mockup-for-desig.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #navbar {
-    background-color: white;
+    background-color: var(--nav-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
 }
 
-.heading-text {
-    text-align: center;
-    color: black;
-    background-color:#74CEFE;
-    margin-left: 268px;
-    margin-right: 268px;
+.nav-link {
+    color: var(--nav-text) !important;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    position: relative;
+    opacity: 0.8;
+}
 
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: var(--accent-color) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
 }
 
 .home {
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-}
-
-.heading-area {
-    opacity: 0.8;
-    padding-top: 60px;
-}
-
-#card {
-    max-width: 990px;
-    max-height: 900px;
-}
-
-.full-card {
-    padding-top: 50px;
-    padding-left: 250px;
-    opacity: 0.9;
-}
-
-.card {
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 10px;
-}
-
-.card-title,
-.card-text {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     text-align: center;
 }
 
+.heading-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.home-card {
+    max-width: 800px;
+}
+
 .card-title {
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
 }
 
 .card-text {
-    font-size: 20px;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.profile-img-container {
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.navbar-toggler {
+    border-color: var(--border-color);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }

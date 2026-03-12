@@ -10,27 +10,28 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="about-me.css">
-  <title>My Portfolio</title>
+  <title>Abu Musa Sakib | About Me</title>
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand">
-        <img src="img/cooltext397145905680714.png" alt="" width="40" height="30">
+  <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="accent-text" style="font-size: 1.5rem;">AMS.</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about-me.html">About Me</a>
+            <a class="nav-link active" href="about-me.html">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="skills.html">Skills</a>
@@ -45,14 +46,23 @@
 
   <div class="about-me">
     <div class="container">
+      <h1 class="text-center mb-5"><span class="accent-text">About Me</span></h1>
       <div class="row">
         <div class="col-md-4">
-          <img src="img/IMG_20191216_120627.jpg" alt="" id="myimg">
+          <img src="img/IMG_20191216_120627.jpg" alt="Abu Musa Sakib" id="myimg">
+          
+          <div class="card p-3 mb-4">
+            <h5 class="card-title">Interests</h5>
+            <hr>
+            <p class="card-text">
+              Travelling, Listening to music, Playing online games
+            </p>
+          </div>
         </div>
         <div class="col-md-8">
           <div class="full-card">
             <div class="cards">
-              <div class="card w-55">
+              <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Personal Details</h5>
                   <hr>
@@ -65,53 +75,36 @@
               </div>
             </div>
             <div class="cards">
-              <div class="card w-55">
+              <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Education</h5>
                   <hr>
                   <p class="card-text">
-                    <strong>Independent University, Bangladesh (IUB) (2018-Present)</strong>
+                    <strong class="d-block mb-1">Independent University, Bangladesh (IUB)</strong>
+                    <span class="text-white">2018 - Present</span>
                     <h6>Undergraduate (BSc.)</h6>
-                    Major: Computer Science <br>
-                    Minor: Environmental Management <br>
-                    Started my semester on: Autumn 2018<br>
-                    <strong>Milestone College (2014-2018)</strong>
-                    <h6>Higher School Certificate (HSC)</h6>
-                    Group: Science <br>
-                    Batch: 2018 <br>
-                    <h6>Secondary School Certificate (SSC)</h6>
-                    Group: Science <br>
-                    Batch: 2016 <br>
-                    <strong>BIAM Model School and College (2012-2013)</strong>
-                    <h6>Junior School Certificate (SSC)</h6>
-                    Batch: 2013 <br>
+                    <p class="mb-2">Major: Computer Science | Minor: Environmental Management</p>
+                    
+                    <strong class="d-block mb-1 mt-3">Milestone College</strong>
+                    <span class="text-white">2014 - 2018</span>
+                    <h6>Higher School Certificate (HSC) & SSC</h6>
+                    <p class="mb-0">Group: Science</p>
                   </p>
                 </div>
               </div>
             </div>
             <div class="cards">
-              <div class="card w-55">
+              <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Extra Curriculur Activities</h5>
+                  <h5 class="card-title">Extra Curricular Activities</h5>
                   <hr>
-                  <p class="card-text">
-                    1. Member of IEEE Computer Society Club <br>
-                    2. Member of IUB Chess Club <br>
-                    3. Former Motivational Speaker of IUB Toastmasters Club <br>
-                    4. Learned some basic Graphic Design at Hashkode <br>
-                    5. Participated in Milestone College Chess Tournament <br>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cards">
-              <div class="card w-55">
-                <div class="card-body">
-                  <h5 class="card-title">Interests</h5>
-                  <hr>
-                  <p class="card-text">
-                    Travelling, Listening to music, Playing online games
-                  </p>
+                  <ul class="card-text list-unstyled">
+                    <li>• Member of IEEE Computer Society Club</li>
+                    <li>• Member of IUB Chess Club</li>
+                    <li>• Former Motivational Speaker of IUB Toastmasters Club</li>
+                    <li>• Basic Graphic Design training at Hashkode</li>
+                    <li>• Milestone College Chess Tournament Participant</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -119,7 +112,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
 

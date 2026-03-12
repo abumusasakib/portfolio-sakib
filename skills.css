@@ -1,12 +1,100 @@
-body {
-    background-image: url(img/92220679-corporate-identity-template-on-white-paper-background-photo-of-blank-stationery-set-mockup-for-desig.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#navbar {
+    background-color: var(--nav-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
 }
 
-#navbar {
-    background-color: white;
+.nav-link {
+    color: var(--nav-text) !important;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    position: relative;
+    opacity: 0.8;
 }
-.card{
-    max-width: 540px;
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: var(--accent-color) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+.skills {
+    padding: 4rem 0;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    height: 100%;
+    transition: var(--transition);
+    margin-bottom: 2rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-title {
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    color: var(--text-secondary);
+}
+
+.skill-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.skill-list li::before {
+    content: '→';
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.navbar-toggler {
+    border-color: var(--border-color);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }

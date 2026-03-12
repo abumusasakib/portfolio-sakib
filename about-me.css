@@ -1,35 +1,91 @@
-body {
-    background-image: url(img/92220679-corporate-identity-template-on-white-paper-background-photo-of-blank-stationery-set-mockup-for-desig.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#navbar {
+    background-color: var(--nav-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
 }
 
-#navbar {
-    background-color: white;
-}
-.full-card{
-    padding-right: 20px;
-    padding-top: 20px;
-}
-.cards{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.nav-link {
+    color: var(--nav-text) !important;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    position: relative;
     opacity: 0.8;
 }
-#myimg{
-    padding-top: 40px;
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: var(--accent-color) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
     width: 100%;
 }
-.card-text{
-    margin: 0px;
+
+.about-me {
+    padding: 4rem 0;
 }
-h6{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight:600;
+
+#myimg {
+    border-radius: 20px;
+    width: 100%;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 2rem;
 }
-strong{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-weight: bolder;
+
+.cards {
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    color: var(--text-primary);
+}
+
+.card-title {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card-text {
+    color: var(--text-secondary);
+}
+
+hr {
+    border-color: var(--border-color);
+    opacity: 1;
+}
+
+h6 {
+    color: var(--text-primary);
+    margin-top: 1rem;
+}
+
+strong {
+    color: var(--accent-color);
+}
+
+.navbar-toggler {
+    border-color: var(--border-color);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }
