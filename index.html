@@ -1,132 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
- <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <!-- Bootstrap CSS -->
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
-  <link href="theme.css" rel="stylesheet"/>
-  <link href="styles.css" rel="stylesheet"/>
-  <link href="portfolio.css" rel="stylesheet"/>
-  <title>
-   Abu Musa Sakib | Portfolio
-  </title>
- </head>
- <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Abu Musa Sakib, software engineer building dependable Flutter applications and practical developer tools.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+  <link href="theme.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>Abu Musa Sakib | Software Engineer</title>
+</head>
+<body>
   <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
-   <div class="container">
-    <a class="navbar-brand" href="index.html">
-     <span class="accent-text" style="font-size: 1.5rem;">
-      AMS.
-     </span>
-    </a>
-    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-     <span class="navbar-toggler-icon">
-     </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-       <a class="nav-link active" href="index.html">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="about-me.html">
-        About Me
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="skills.html">
-        Skills
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="portfolio.html">
-        Projects
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="contact.html">
-        Contact
-       </a>
-      </li>
-     </ul>
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="Abu Musa Sakib home">AMS<span class="brand-mark">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about-me.html">About</a></li><li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li><li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul></div>
     </div>
-   </div>
   </nav>
-  <div class="home">
-   <div class="heading-area">
-    <h1 class="heading-text">
-     Hello, I'm
-     <br/>
-     <span class="accent-text">
-      Abu Musa Sakib
-     </span>
-    </h1>
-   </div>
-   <div class="glass-card home-card">
-    <div class="row align-items-center">
-     <div class="col-md-4 text-center">
-      <div class="profile-img-container">
-       <img alt="Sakib" class="profile-img" src="img/download.svg"/>
-      </div>
-     </div>
-     <div class="col-md-8">
-      <div class="card-body p-0">
-       <h5 class="card-title">
-        Junior Software Engineer
-       </h5>
-       <div class="card-text">
-        <p class="mb-2">
-         Worked and collaborated with teammates on newer and existing projects.
-        </p>
-        <p class="mb-2">
-         Designed and developed cross-platform mobile applications using the Flutter framework for Android, iOS and Web.
-        </p>
-        <p class="mb-2">
-         Delivered responsive, user-friendly, and visually appealing interfaces tailored to client specifications.
-        </p>
-       </div>
-       <div class="mt-4">
-        <a class="btn-primary-modern" href="contact.html">
-         Get In Touch
-        </a>
-       </div>
-      </div>
-     </div>
+  <main class="home">
+    <div class="container home-hero">
+      <section class="hero-intro" aria-labelledby="hero-title">
+        <p class="eyebrow">Software engineer / Dhaka, Bangladesh</p>
+        <h1 class="display-title" id="hero-title">Abu Musa Sakib builds thoughtful software.</h1>
+        <p class="hero-copy">I am a software engineer focused on cross-platform Flutter applications, practical automation, and interfaces that remain clear under real-world pressure.</p>
+        <div class="hero-actions"><a class="button-primary" href="portfolio.html">Selected work <span aria-hidden="true">&#8594;</span></a><a class="button-secondary" href="contact.html">Start a conversation <span aria-hidden="true">&#8594;</span></a></div>
+      </section>
+      <aside class="hero-side" aria-label="Profile overview">
+        <div class="portrait-panel"><img class="profile-img" src="img/download.svg" alt="Illustration representing Abu Musa Sakib"></div>
+        <p class="hero-side-note">Flutter applications<br>Developer tooling<br>API integrations<br>Reliable delivery</p>
+      </aside>
     </div>
-   </div>
-  </div>
-  <footer class="footer">
-   <div class="container">
-    <div class="footer-socials">
-     <a class="social-icon-link" href="https://github.com/abumusasakib" target="_blank">
-      <i class="fab fa-github">
-      </i>
-     </a>
-     <a class="social-icon-link" href="https://www.linkedin.com/in/abu-musa-sakib-15895716b/" target="_blank">
-      <i class="fab fa-linkedin-in">
-      </i>
-     </a>
-     <a class="social-icon-link" href="https://www.facebook.com/abumusa.sakib" target="_blank">
-      <i class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a class="social-icon-link" href="https://www.instagram.com/abumusasakib/" target="_blank">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-    </div>
-    <p class="footer-text">
-     © 2026 Abu Musa Sakib. All rights reserved.
-    </p>
-   </div>
-  </footer>
-  <!-- Bootstrap Bundle with Popper -->
-  <script crossorigin="anonymous" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
-  </script>
- </body>
+    <section class="container home-overview" aria-labelledby="overview-title">
+      <div><p class="eyebrow">Working style</p><h2 class="section-title" id="overview-title">From a useful idea to a dependable release.</h2></div>
+      <div class="overview-list">
+        <article class="overview-item"><span class="mono-label">01</span><div><strong>Mobile products</strong><p>Flutter work across Android, iOS, and web with attention to the details that make an interface feel easy to use.</p></div></article>
+        <article class="overview-item"><span class="mono-label">02</span><div><strong>Useful integrations</strong><p>Automation, OCR, APIs, and data workflows that turn repetitive work into a calmer process.</p></div></article>
+        <article class="overview-item"><span class="mono-label">03</span><div><strong>Collaborative delivery</strong><p>Comfortable working within an existing product, codebase, and team rhythm without losing sight of the person using it.</p></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><p class="footer-text">&copy; 2026 Abu Musa Sakib</p><div class="footer-socials"><a class="social-icon-link" href="https://github.com/abumusasakib" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a class="social-icon-link" href="https://www.linkedin.com/in/abu-musa-sakib-15895716b/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
