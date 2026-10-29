@@ -126,6 +126,15 @@
   margin: 0;
 }
 
+.project-highlights {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.project-highlights li + li { margin-top: 0.45rem; }
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
