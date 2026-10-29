@@ -5,8 +5,11 @@
 .contact-detail a { color: var(--accent); font-size: 1.05rem; font-weight: 700; overflow-wrap: anywhere; }
 .contact-detail a:hover { color: var(--accent-deep); text-decoration: underline; }
 .contact-form { border-top: 0.125rem solid var(--ink); padding-top: 1.5rem; }
+.form-status { color: var(--accent-deep); font-size: 0.92rem; font-weight: 700; margin-bottom: 1rem; }
+.form-status:empty { display: none; }
 .form-label { font-size: 0.88rem; font-weight: 800; }
 .form-control { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; color: var(--ink); padding: 0.8rem 0; }
 .form-control:focus { background: transparent; border-color: var(--accent); box-shadow: none; color: var(--ink); }
 .form-control::placeholder { color: var(--muted-subtle); }
 @media (max-width: 767px) { .contact-layout { gap: 3.5rem; grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .btn-primary-modern { transition: none; transform: none; } }

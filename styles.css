@@ -14,3 +14,4 @@
 .overview-item p { color: var(--muted); margin: 0; }
 .overview-item strong { font-size: 1rem; }
 @media (max-width: 767px) { .home-hero, .home-overview { grid-template-columns: 1fr; } .hero-side { border-left: 0; border-top: 1px solid var(--line); padding: 2rem 0 0; } .portrait-panel { min-height: 300px; } }
+@media (prefers-reduced-motion: reduce) { .button-primary, .button-secondary { transition: none; transform: none; } }
