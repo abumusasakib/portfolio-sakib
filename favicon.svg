@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><g transform="translate(5.12 5.12) scale(0.48)">
+  
+  <!-- Background Badge: Forest Green Accent #146451 -->
+  <rect width="512" height="512" rx="112" fill="#146451"/>
+  
+  <!-- Subtle inner border outline -->
+  <path d="M120 32 H 392 A 88 88 0 0 1 480 120 V 392 A 88 88 0 0 1 392 480 H 120 A 88 88 0 0 1 32 392 V 120 A 88 88 0 0 1 120 32 Z M 120 38 A 82 82 0 0 0 38 120 V 392 A 82 82 0 0 0 120 474 H 392 A 82 82 0 0 0 474 392 V 120 A 82 82 0 0 0 392 38 Z" fill="#ffffff" fill-opacity="0.15"/>
+
+  <!-- 'AMS' Monogram: High-contrast Off-White #F6F4EE -->
+  <g fill="#F6F4EE">
+    <!-- 'A' Left Pillar -->
+    <path d="M104 380 V 164 H 152 V 380 Z"/>
+    
+    <!-- Crossbar of 'A' -->
+    <path d="M152 256 H 224 V 296 H 152 Z"/>
+    
+    <!-- Central 'M' Ridge / Right 'A' Leg -->
+    <path d="M224 164 H 272 V 380 H 224 Z"/>
+    
+    <!-- 'A' Upper Link -->
+    <path d="M104 164 H 272 V 204 H 104 Z"/>
+
+    <!-- 'S' Upper Bar and Bend -->
+    <path d="M272 164 H 408 V 204 H 272 Z"/>
+    <path d="M360 204 H 408 V 276 H 312 V 316 H 408 V 380 H 272 V 340 H 360 V 304 H 272 Z" fill-rule="evenodd"/>
+  </g>
+
+  <!-- Signature Brand Mark Dot: Warm Amber Gold #E8AD63 -->
+  <circle cx="426" cy="362" r="22" fill="#E8AD63"/>
+</g></svg>
