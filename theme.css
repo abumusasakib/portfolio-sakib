@@ -26,7 +26,7 @@ html { scroll-behavior: smooth; }
 body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; margin: 0; }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
-.container { max-width: var(--content-width); }
+.container { max-width: var(--content-width); padding-left: 1.25rem; padding-right: 1.25rem; }
 
 #navbar { background: rgba(246, 244, 238, 0.93); border-bottom: 1px solid var(--line); padding: 1rem 0; }
 .navbar-brand { color: var(--ink); font-family: var(--mono); font-size: 1.1rem; font-weight: 500; letter-spacing: 0; }
@@ -48,9 +48,9 @@ a { color: inherit; text-decoration: none; }
 .button-secondary { align-items: center; border-bottom: 1px solid var(--ink); display: inline-flex; font-size: 0.9rem; font-weight: 800; gap: 0.7rem; padding: 0.55rem 0; }
 .button-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
-.page-hero { padding: clamp(4.5rem, 10vw, 8rem) 0 3.5rem; }
+.page-hero { padding: clamp(4.5rem, 10vw, 8rem) 1.25rem 3.5rem; }
 .page-hero--compact { padding-bottom: 2.5rem; }
-.section-block { padding: 5.5rem 0; }
+.section-block { padding: 5.5rem 1.25rem; }
 .section-block--line { border-top: 1px solid var(--line); }
 
 .footer { border-top: 1px solid var(--line); margin-top: 5rem; padding: 2rem 0; }
@@ -61,6 +61,6 @@ a { color: inherit; text-decoration: none; }
 .footer-text { color: var(--muted); font-family: var(--mono); font-size: 0.72rem; margin: 0; }
 :focus-visible { outline: var(--outline-width) solid var(--warm); outline-offset: var(--outline-offset); }
 
-@media (max-width: 991px) { .navbar-collapse { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 0.75rem; } .nav-link { margin-left: 0; } }
-@media (max-width: 575px) { .page-hero { padding-top: 4rem; } .section-block { padding: 3.75rem 0; } .footer-inner { align-items: flex-start; flex-direction: column; } }
+@media (max-width: 991px) { .navbar-collapse { border-top: 1px solid var(--line); margin-top: 0.85rem; padding-top: 0.85rem; } .nav-link { margin-left: 0; padding: 0.5rem 0 !important; } }
+@media (max-width: 575px) { .page-hero { padding-top: 4rem; } .section-block { padding: 3.75rem 1.25rem; } .footer-inner { align-items: flex-start; flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
